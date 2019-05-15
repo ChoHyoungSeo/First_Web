@@ -1,0 +1,31 @@
+.form-group
+  label(for="title") Title
+  input.form-control(type="text", name="title", placeholder="Write down the name of your contest", value=question.title)
+.form-group
+  label(for="host") Host
+  input.form-control(type="text", name="host", placeholder="The host of your contest", value=question.host)
+.form-group
+  label(for="field") Field
+  input.form-control(type="text", name="field", placeholder="Write down the field of a contest", value=question.field)
+.form-group
+  label(for="subject") Subject to participate
+  input.form-control(type="text", name="subject", value=question.subject)
+.form-group
+  label(for="deadline") Deadline
+  input.form-control(type="text", name="deadline", placeholder="Deadline of your contest", value=question.deadline)
+.form-group
+  label(for="phone") PhoneNumber
+  input.form-control(type="text", name="phone", value=question.phone)
+.form-group
+  label(for="manager") Manager
+  input.form-control(type="text", name="manager", placeholder="The manager of your contest", value=question.manager)
+.form-group
+  label(for="question") Contest(Main points)
+  textarea.form-control(name="content", rows="5")= question.content
+.form-group
+  label(for="tags") Tags
+  input.form-control(type="text", name="tags", placeholder="tags separated by spaces", value=question.tags ? question.tags.join(" ") : "")
+.form-group
+  label(for="ref") Reference
+  input.form-control(type="text", name="ref", placeholder="Any other reference site?", value=question.ref)
+
